@@ -15,9 +15,9 @@ class Parent extends Component {
   changeColor = (newChildColor) => {
     this.setState({
       color: getRandomColor(),
-      childrenColor: newChildColor
-    })
-  } 
+      childrenColor: newChildColor()
+    });
+  };
 
   render() {
     return (
